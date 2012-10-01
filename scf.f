@@ -23,7 +23,7 @@ CCCCCC************************************************************
       
       IF (IOP.NE.0) PRINT 10, N, ZA, ZB
       CALL INTEGRALS(IOP,N,R,Z1,Z2,ZA,ZB)
-      CALL COLLECT(IOP,N,R,Z1,Z2,ZA,ZB) 
+      CALL COLLECT() 
       CALL SCF(IOP,N,R,Z1,Z2,ZA,ZB) 
    
 10    FORMAT(1H1,2X,4HSTO-,I1,21HG FOR ATOMIC NUMBERS , F5.2, 5H AND , 
@@ -310,7 +310,7 @@ CCCCCC************************************************************
       END
       
 CCCCCC************************************************************
-      SUBROUTINE COLLECT(A,B,C,D,RAB2,RCD2,RPQ2)
+      SUBROUTINE COLLECT()
 CCCCCC************************************************************
      
 CCCCCC************************************************************
